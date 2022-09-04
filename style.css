@@ -1,0 +1,481 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, button, a{
+  font-family: "Raleway";
+}
+p{
+  font-family: "Open Sans";
+}
+nav{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo{
+  width: 100px;
+  margin-left: 10px;
+}
+#logo img{
+  width: 100%;
+}
+#navlinks a{
+  display: inline-block;
+  color: hsl(243, 87%, 12%);
+  text-decoration: none;
+  font-size: 0.80em;
+}
+#navlinks a {
+  margin: 0 10px;
+}
+header h1{
+  font-weight: 700;
+  margin: 30px auto;
+  line-height: 1.5em;
+  color: hsl(243, 87%, 12%);   
+}
+header p{
+  font-size: 0.9em;
+  margin: 25px auto;
+  color: hsl(243, 87%, 12%);
+  line-height: 1.6em;
+}
+header input {
+  background: white;
+  border: 0.1px solid hsl(243, 87%, 12%);
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+header input:hover{
+  border: 1px solid red;
+}
+header button{
+  background: hsl(224, 93%, 58%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 2px hsla(0, 0%, 75%, 20%);
+}
+header button:hover{
+  opacity: 0.7;
+  cursor:pointer ;
+}
+
+.one{
+  background: hsl(240, 75%, 98%);
+}
+.one h2{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 25px 0;
+}
+.one p{
+  font-size: 0.85em;
+  color: hsl(238, 22%, 44%);
+  line-height: 1.55em;
+  margin: 25px;
+}
+.one .text div{
+  font-size: 0.72em;
+  color: hsl(170, 49%, 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5em;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  width: 130px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.one .text div a:hover{
+ opacity: 0.5;
+ cursor: pointer;
+}
+#review{
+  padding: 25px 30px;
+  margin: 50px auto;
+  width: 20em;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 6px hsl(233, 39%, 95%);
+  display: flex;
+  flex-direction: column;
+  color: hsl(243, 87%, 12%); 
+}
+#review img{
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+#review p{
+  margin: 15px 0;
+  font-size: 0.7em;
+  color: hsl(243, 87%, 12%);
+}
+#user{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#user img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#user_infos{
+  display: flex;
+  flex-direction: column;
+}
+#user_infos h4{
+  font-size: 0.7em;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: hsl(243, 87%, 12%);
+}
+#user_infos p{
+  font-size: 0.5em;
+  margin: 0;
+  margin-bottom: -3px;
+  color: hsl(243, 87%, 12%);
+}
+.two{
+  padding: 4em 3em;
+  background: hsl(238, 22%, 44%);
+}
+.two h3, .two p{
+  color: white;
+}
+.two h3{
+  margin-bottom: 1em;
+}
+.two p{
+  font-size: 0.85em;
+  opacity: 0.9;
+}
+.two input{
+  background: white;
+  padding: 10px 5px;
+  border-radius: 2px;
+  border: none;
+}
+.two input:hover{
+  border: 1px solid red;
+}
+.two button{
+  background: hsl(224, 93%, 58%);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+}
+.two button:hover{
+  opacity: 0.7;
+}
+footer{
+  background: hsl(243, 87%, 12%);
+  color: white;
+  font-family: "Open Sans";
+}
+footer img{
+  display: block;
+}
+footer img, footer .contact div{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+footer .contact div{
+  display: flex;
+  align-items: center;
+  font-size: 0.9em; 
+}
+footer .contact div img{
+  margin-right: 20px;    
+}
+footer .infos{
+  display: flex;
+  flex-direction: column;
+}
+footer .infos a{
+  text-decoration: none;
+  color: white;
+  margin: 8px 0;
+  font-size: 0.9em;
+}
+footer .infos a:hover{
+  color: hsl(224, 93%, 58%);
+  cursor: pointer;
+}
+footer .others div{
+  font-size: 0.9em;
+  margin: 8px 0;
+}
+footer .social i{
+  font-size: 1.5em;
+  margin: 0 5px;
+}
+footer .social i:hover{
+  color: hsl(224, 93%, 58%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+  .illustration{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .illustration img{
+    width: 100%;
+  }
+  header{
+    padding-bottom: 150px;
+    background: url('images/bg-curve-mobile.svg') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  header .text{
+    width: 100%;
+  }
+  header h1{
+    width: 90%;
+    text-align: center;
+  }
+  header p{
+    width: 80%;
+    text-align: center;
+  }
+  header .text input, header .text button{
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+  }
+  .one{
+    padding: 50px 0;
+  }
+  .one .illustration{
+    margin-bottom: 100px;
+  }
+  .one .text div{
+    margin: 0 auto;
+  }
+  .two h3, .two p{
+    text-align: center;
+  }
+  .two p{
+    margin-bottom: 1.8em;
+    line-height: 1.8em;
+  }
+  .two input, .two button{
+    display: block;
+    width: 85%;
+    margin: 10px auto;
+  }
+  footer{
+    padding: 4em 2.5em;
+  }
+  footer .infos, footer .others{
+    margin: 2.2em 0;
+  }
+  footer .social{
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:601px) {
+    header, main, footer{
+      width: 600px;
+      margin: 0 auto; 
+    }
+    .illustration{
+        width: 90%;
+        margin: 0 auto;
+      }
+      .illustration img{
+        width: 100%;
+      }
+      header{
+        padding-bottom: 150px;
+        background: url('images/bg-curve-mobile.svg') no-repeat;
+        background-size: contain;
+        background-position: bottom;
+      }
+      header .text{
+        width: 100%;
+      }
+      header h1{
+        width: 90%;
+        text-align: center;
+      }
+      header p{
+        width: 80%;
+        text-align: center;
+      }
+      header .text input, header .text button{
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+      }
+      .one{
+        padding: 50px 0;
+      }
+      .one .illustration{
+        margin-bottom: 100px;
+      }
+      .one .text div{
+        margin: 0 auto;
+      }
+      .two h3, .two p{
+        text-align: center;
+      }
+      .two p{
+        margin-bottom: 1.8em;
+        line-height: 1.8em;
+      }
+      .two input, .two button{
+        display: block;
+        width: 85%;
+        margin: 10px auto;
+      }
+      footer{
+        padding: 4em 2.5em;
+      }
+      footer .infos, footer .others{
+        margin: 2.2em 0;
+      }
+      footer .social{
+        text-align: center;
+      }
+}
+
+@media only screen and (min-width:900px) {
+
+  header, main, footer{
+    width: 100%;
+  }
+  header section, .two{
+    display: flex;
+    align-items: center;
+  }
+  header{
+    background: url('images/bg-curve-desktop.svg') no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding: 1em 2em 10em;
+  }
+  header section .text{
+    width: 55%;
+  }
+  header section .illustration{
+    width: 45%;
+  }
+  header section .text h1, header section .text p{
+    text-align: left;
+    width: 90%;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header .text{
+    order: 1;
+  }
+  .illustration{
+    order: 2;
+  }
+  header .text form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  header .text form input{
+    display: block;
+    width: 50%;
+    margin-left: 0;
+  }
+  header .text form button{
+    display: block;
+    width: 35%;
+    padding: 10px 30px;
+    margin-left: -30px;
+  }
+  .one{
+    padding: 2em 2em;
+    display: flex;
+    align-items: center;
+  }
+  .one .use{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 55%;
+  }
+  .one .illustration{
+    width: 45%;
+  }
+  .use .text h2, .use .text p{
+    width: 85%;
+    text-align: left;
+    margin-left: 0;
+  }
+  .use .text div{
+    margin-left: 0;
+  }
+  .use #review{
+    margin: 30px 0;
+  }
+  .use .text p{
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .two div{
+    width: 55%;
+  }
+  .two div h3, .two div p{
+    text-align: left;
+  }
+  .two div p{
+    margin-bottom: 0;
+  }
+  .two form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  .two form button{
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 0;
+  }
+  .two form button, .two form input{
+    margin-left: 10%;
+  }
+  #bc{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #bc .contact{
+    width: 25%;
+  }
+  #bc .infos, #bc .others, #bc .social{
+    width: 15%;
+    margin: 0;
+  }
+  #bc .infos, #bc .others{
+    margin-top: 7px;
+  }
+  #bc .social{
+    margin-right: 70px;
+    margin-top: 15px;
+  }
+}
